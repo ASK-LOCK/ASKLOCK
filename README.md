@@ -1,2 +1,3 @@
-# ASK-LOCK-master
-the Master Branch of the ASK LOCK application
+
+
+For details, please see http://ics-software-engineering.github.io/meteor-application-template-react/
