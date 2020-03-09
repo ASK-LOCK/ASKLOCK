@@ -7,13 +7,9 @@ class Landing extends React.Component {
     return (
         <Grid verticalAlign='middle' textAlign='center' container>
 
-          <Grid.Column width={4}>
-            <Image size='small' circular src="/images/meteor-logo.png"/>
-          </Grid.Column>
-
           <Grid.Column width={8}>
-            <h1>Welcome to this template</h1>
-            <p>Now get to work and modify this app!</p>
+            <Image size='small' centered src="/images/lock_image.png"/>
+            <p>We will sell your password information to make money!</p>
           </Grid.Column>
 
         </Grid>
