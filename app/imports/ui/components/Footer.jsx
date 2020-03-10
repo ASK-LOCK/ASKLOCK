@@ -21,7 +21,7 @@ class Footer extends React.Component {
                 Twitter
               </List.Item> <br />
             </Grid.Column>
-  
+
             <Grid.Column width={3}>
               <List className="font-color-green font-bold font-small">About Us</List>
               <hr/>
