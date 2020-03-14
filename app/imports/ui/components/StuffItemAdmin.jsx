@@ -7,9 +7,9 @@ class StuffItemAdmin extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.stuff.name}</Table.Cell>
-          <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
-          <Table.Cell>{this.props.stuff.condition}</Table.Cell>
+          <Table.Cell>{this.props.stuff.Account}</Table.Cell>
+          <Table.Cell>{this.props.stuff.Username}</Table.Cell>
+          <Table.Cell>{this.props.stuff.Password}</Table.Cell>
           <Table.Cell>{this.props.stuff.owner}</Table.Cell>
         </Table.Row>
     );

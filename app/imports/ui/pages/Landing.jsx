@@ -8,7 +8,9 @@ class Landing extends React.Component {
         <Grid verticalAlign='middle' textAlign='center' container>
 
           <Grid.Column width={8}>
-            <Image size='small' centered src="/images/lock_image.png"/>
+            <a href="/signin#/signin">
+            <img src="/images/lock_image.png"/>
+            </a>
             <p>We will sell your password information to make money!</p>
           </Grid.Column>
 
