@@ -9,9 +9,13 @@ import SimpleSchema from 'simpl-schema';
 
 /** Create a schema to specify the structure of the data to appear in the form. */
 const formSchema = new SimpleSchema({
-  Account: String,
-  Username: String,
-  Password: String,
+  name: String,
+  quantity: Number,
+  condition: {
+    type: String,
+    allowedValues: ['excellent', 'good', 'fair', 'poor'],
+    defaultValue: 'good',
+  },
 });
 
 /** Renders the Page for adding a document. */
@@ -19,9 +23,9 @@ class AddStuff extends React.Component {
 
   /** On submit, insert the data. */
   submit(data, formRef) {
-    const { Account, Username, Password } = data;
+    const { name, quantity, condition } = data;
     const owner = Meteor.user().username;
-    Stuffs.insert({ Account, Username, Password, owner },
+    Stuffs.insert({ name, quantity, condition, owner },
       (error) => {
         if (error) {
           swal('Error', error.message, 'error');
@@ -38,12 +42,12 @@ class AddStuff extends React.Component {
     return (
         <Grid container centered>
           <Grid.Column>
-            <Header as="h2" textAlign="center">Add Account</Header>
+            <Header as="h2" textAlign="center">Add Stuff</Header>
             <AutoForm ref={ref => { fRef = ref; }} schema={formSchema} onSubmit={data => this.submit(data, fRef)} >
               <Segment>
-                <TextField name='Account'/>
-                <TextField name='Username'/>
-                <TextField name='Password'/>
+                <TextField name='name'/>
+                <NumField name='quantity' decimal={false}/>
+                <SelectField name='condition'/>
                 <SubmitField value='Submit'/>
                 <ErrorsField/>
               </Segment>

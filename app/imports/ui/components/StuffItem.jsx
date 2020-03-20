@@ -8,12 +8,12 @@ class StuffItem extends React.Component {
   render() {
     return (
         <Table.Row>
-          <Table.Cell>{this.props.stuff.Account}</Table.Cell>
-          <Table.Cell>{this.props.stuff.Username}</Table.Cell>
-          <Table.Cell>{this.props.stuff.Password}</Table.Cell>
+          <Table.Cell>{this.props.stuff.name}</Table.Cell>
+          <Table.Cell>{this.props.stuff.quantity}</Table.Cell>
+          <Table.Cell>{this.props.stuff.condition}</Table.Cell>
           <Table.Cell>
             <Link to={`/edit/${this.props.stuff._id}`}>Edit</Link>
-          </Table.Cell>s
+          </Table.Cell>
         </Table.Row>
     );
   }
