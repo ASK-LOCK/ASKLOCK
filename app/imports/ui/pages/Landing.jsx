@@ -13,7 +13,6 @@ class Landing extends React.Component {
             </a>
             <p>We will sell your password information to make money!</p>
           </Grid.Column>
-
         </Grid>
     );
   }
