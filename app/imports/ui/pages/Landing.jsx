@@ -7,7 +7,7 @@ class Landing extends React.Component {
     return (
         <div className="vertical-placement">
             <a href="/signin#/signin">
-            <img className="center-image animated bounce" src="/images/lock_image_transparent_circle.png"/>
+            <img className="center-image animated bounceInUp" src="/images/lock_image_transparent_circle.png"/>
             </a>
         </div>
     );
