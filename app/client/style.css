@@ -12,3 +12,9 @@ footer{
     fixed-width: 40%;
     vertical-align: middle;
 }
+body{
+    background-color: #0f0f10 !important;
+}
+.vertical-placement{
+    verticle-align: middle;
+}

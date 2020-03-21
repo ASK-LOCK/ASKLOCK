@@ -5,9 +5,9 @@ import { } from 'semantic-ui-react';
 class Landing extends React.Component {
   render() {
     return (
-        <div>
+        <div className="vertical-placement">
             <a href="/signin#/signin">
-            <img className="center-image animated bounce" src="/images/lock_image_transparent.svg"/>
+            <img className="center-image animated bounce" src="/images/lock_image_transparent_circle.png"/>
             </a>
         </div>
     );
