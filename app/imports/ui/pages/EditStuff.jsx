@@ -32,10 +32,10 @@ class EditStuff extends React.Component {
             <Header as="h2" textAlign="center">Edit Stuff</Header>
             <AutoForm schema={StuffSchema} onSubmit={data => this.submit(data)} model={this.props.doc}>
               <Segment>
-                <TextField name='name'/>
-                <NumField name='quantity' decimal={false}/>
-                <SelectField name='condition'/>
-                <SubmitField value='Submit'/>
+                <TextField name='Account'/>
+                <TextField name='Username'/>
+                <TextField name='Password'/>
+                <SubmitField value='Save'/>
                 <ErrorsField/>
                 <HiddenField name='owner' />
               </Segment>

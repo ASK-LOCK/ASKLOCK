@@ -10,6 +10,7 @@ const StuffSchema = new SimpleSchema({
   Account: String,
   Username: String,
   Password: String,
+  owner: String,
 }, { tracker: Tracker });
 
 /** Attach this schema to the collection. */

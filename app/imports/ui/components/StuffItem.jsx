@@ -13,7 +13,7 @@ class StuffItem extends React.Component {
           <Table.Cell>{this.props.stuff.Password}</Table.Cell>
           <Table.Cell>
             <Link to={`/edit/${this.props.stuff._id}`}>Edit</Link>
-          </Table.Cell>s
+          </Table.Cell>
         </Table.Row>
     );
   }
