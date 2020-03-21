@@ -24,3 +24,9 @@ body{
     right: 0;
     margin: auto;
 }
+.Main-Lock:hover{
+    animation: shake 1s;
+}
+.Main-Lock{
+   transition: bounceOutDown;
+}
