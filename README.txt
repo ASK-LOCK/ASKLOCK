@@ -28,8 +28,29 @@ Pending:
 -rubics cube
 #######################################################################
 #######################################################################
+How to install our source code
+1. Install Chocolatey (https://chocolatey.org/install) and open command line
+    - if already installed, ensure your version is up to date. 
+    - $choco upgrade chocolatey
+
+2. Install Meteor
+    - $choco install meteor
+    - ensure proper installation
+    - $meteor --version
+        - which should return Meteor 1.7.0.5
+        
+3. Unpack Source code from https://github.com/ASK-LOCK/ASKLOCK/releases/tag/1.0
+4. Navigate to /app folder and type in "cmd" in the file file directory bar
+5. Install libraries in your local directory
+    - $meteor npm install
+6. Run application
+    - $meteor npm run start
+7. Open brower (chrome prefered) to view use application (http://localhost:3000) 
+
+#######################################################################
+#######################################################################
 User Guide Step-By-Step
-1.Go to [Insert URL]
+1. Complete User Specifications before continuing, If done so already, go to the local host on any browser.
 
 2.Upon loading the home page you are greeted with the ASK LOCK logo. Click on the lock to start the login or registration process. Continue to step 3 to continue the registration process. If you have already registered, continue to step 4
 
@@ -69,7 +90,7 @@ Disappointments:
 1. To many
 
 Links
-Repo
-Final Project Documentation
-Release Version
-Wiki
+Repo 				https://github.com/ASK-LOCK/ASKLOCK
+Final Project Documentation 	https://github.com/ASK-LOCK/ASKLOCK/blob/new-master/ICS%20427%20Assignment%205%20Final.pdf
+Release Version			https://github.com/ASK-LOCK/ASKLOCK/releases
+Wiki				https://github.com/ASK-LOCK/ASKLOCK/wiki
