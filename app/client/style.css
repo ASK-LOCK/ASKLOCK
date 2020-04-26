@@ -10,6 +10,10 @@ footer{
 .white-text {
   color: white !important;
 }
+
+.bold-text {
+  font-weight: bold;
+}
 .center-image {
     display: block;
     margin-left: auto;
