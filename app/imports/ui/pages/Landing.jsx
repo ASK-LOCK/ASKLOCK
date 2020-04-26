@@ -1,6 +1,5 @@
 import React from 'react';
 import {Grid, Container} from 'semantic-ui-react';
-import { Roles } from 'meteor/alanning:roles';
 
 /** A simple static component to render some text for the landing page. */
 class Landing extends React.Component {
@@ -21,11 +20,6 @@ class Landing extends React.Component {
                     </Grid>
                 </Container>
             </div>
-
-      {this.props.currentUser ? (
-          [<Menu.Item as={NavLink} activeClassName="active" exact to="/add" key='add'>New Acount</Menu.Item>,
-            <Menu.Item as={NavLink} activeClassName="active" exact to="/list" key='list'>View My Accounts</Menu.Item>]
-      ) : ''}
         );
     }
 }
